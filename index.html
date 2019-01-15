@@ -8,9 +8,18 @@ $().ready(function() {
 });
 </script>
 
+<script>
+$().ready(function(){
+  $.getJSON("/data.json", function(data){
+    console.log(data);
+    $("#text").html(data["text"]);
+  });
+});
+</script>
+
 
 <div id="text"></div>
-Alexnader
+<b> Alexander L. </b>
 <script>
-document.getElementById("text").innerHTML = "Hello World1";
+document.getElementById("text").innerHTML = "<i>Hello World!</i>";
 </script>
