@@ -1,25 +1,11 @@
 <head>
 <script src="jquery-3.3.1.min.js"></script>
+<script src="/json.js"></script>
 </head>
-
-<script>
-$().ready(function() {
-  $("#text").html("Text from JQ");
-});
-</script>
-
-<script>
-$().ready(function(){
-  $.getJSON("/data.json", function(data){
-    console.log(data);
-    $("#text").html(data["text"]);
-  });
-});
-</script>
 
 
 <div id="text"></div>
-<b> Alexander L. </b>
+<b> Alexander (G) L. </b>
 <script>
 document.getElementById("text").innerHTML = "<i>Hello World!</i>";
 </script>
